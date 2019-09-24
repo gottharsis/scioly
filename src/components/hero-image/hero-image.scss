@@ -1,0 +1,38 @@
+.heroImageContainer {
+    width: 100%;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position-x: center;
+    background-size: cover;
+    align-items: center;
+    box-shadow: inset 0 -10px 20px -10px black;
+    // .heroImage {
+    //     width: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: -1;
+    // }
+}
+
+
+.heroImageText {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px black;
+    // position: absolute;
+    // top: 40%;
+    // margin: .75rem 2rem;
+    font-weight: 700;
+    padding: 10px;
+    
+    @media screen and (max-width: 575px) {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,74 @@
+@import "../../colors";
+.homepage {
+    display: flex;
+    flex-direction: column;
+    div {
+        box-shadow: 0 -9px 8px -10px rgba(black, 0.3) inset;
+    }
+    %linkStyle {
+        
+        h1 {
+            color: white;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }    
+    }
+    .linkContainer {
+        min-height: 3.5rem;
+        margin: .5rem;
+        transition: 0.3s;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 200px;
+        flex: 1;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 0 8px rgba(black, 0.3);
+        &:hover {
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+        }
+        a {
+            flex: 1;
+            padding: .5rem;
+            text-decoration: inherit;
+            color: inherit;
+            box-sizing: border-box;
+            
+        }
+    }
+    .linkList {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        padding: 1rem 0;
+        margin: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .linksContainer {
+        @extend %linkStyle;
+        // background-color: rgb(183, 185, 201);
+        background-color: $color2;
+        .linkContainer {
+            background-color: $color3;
+        }
+    }
+    .testDatabaseContainer {
+        @extend %linkStyle;
+        background-color: $color3;
+        .linkContainer {
+            background-color: $color6;
+        }
+    }
+    .orderFormLinkContainer {
+        @extend %linkStyle;
+        background-color: $color6;
+        .linkContainer {
+            // margin: 0 auto;
+            background-color: $color2;
+        }
+    }
+}

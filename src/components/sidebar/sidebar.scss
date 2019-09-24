@@ -1,0 +1,40 @@
+@import "../../colors";
+
+.container {
+    height: 100vh;
+    width: 20vw;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    position: fixed;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+
+    %link {
+        padding: 1rem;
+        text-decoration: none;
+    }
+    .inactiveLink {
+        @extend %link;
+        // color: #616161;
+        // color: $dark;
+        color: $color2;
+        &:hover {
+            background-color: rgba(black, 0.2);
+        }
+    }
+
+    .activeLink {
+        @extend %link;
+        // background-color: $main;
+        background-color: $color1;
+        color: white;
+        &:hover {
+            // background-color: #346bc3;
+            // background-color: mix(black, $main, 20%);
+            background-color: mix(black, $color1, 20%);
+        }
+    }
+}
